@@ -20,39 +20,33 @@ git clone https://github.com/devdattatemgire/Basic_RAG_Chat_With_PDF.git
 To create a virtual environment, use the following command:
 ```
 python -m venv .venv
-
 ```
 
 ### 3. Activate Virtual Environment:
   - On Windows
     ```
     .\.venv\Scripts\activate
-    
     ```
   - On Linux
     ```
     source .venv/bin/activate
-    
     ```
 ### 4. Install Required Packages:
 After activating the virtual environment, install the required packages using:
 ```
 pip install -r requirements.txt
-
 ```
 
 ### 5. Create a .env File:
 Create a file named .env in the root of your project directory and add your Gemini API key:
 ```
 GEMINI_API_KEY=<your_key>
-
 ```
 
 ### 6. Run the Streamlit App:
 Start the Streamlit app by running the following command:
 ```
 streamlit run app.py
-
 ```
 
 ## 🎉 Happy coding! Remember: Code is like humor. When you have to explain it, it’s bad! 😂
