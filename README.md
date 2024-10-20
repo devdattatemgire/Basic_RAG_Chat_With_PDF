@@ -1,6 +1,6 @@
-# 📝 Chat with Tamil PDF: A RAG Implementation Using Gemini API and LangChain
+# 📝 Chat with PDF: A RAG Implementation Using Gemini API and LangChain
 
-Welcome to **Chat with Tamil PDF**! This is a basic implementation of **Retrieval-Augmented Generation (RAG)** using the **Gemini API** and **LangChain**. The app lets you upload a PDF (particularly Tamil PDFs), split the content into manageable chunks, and interact with it through an intelligent chatbot powered by **Google Gemini LLM** and **FAISS indexing**. 🧠📄
+Welcome to **Chat with PDF**! This is a basic implementation of **Retrieval-Augmented Generation (RAG)** using the **Gemini API** and **LangChain**. The app lets you upload a PDF, split the content into manageable chunks, and interact with it through an intelligent chatbot powered by **Google Gemini LLM** and **FAISS indexing**. 🧠📄
 
 ## Features:
 - **Upload a PDF**: Easily upload your PDF and start chatting with its contents. 📤
