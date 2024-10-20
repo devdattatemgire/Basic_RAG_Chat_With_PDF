@@ -14,7 +14,6 @@ Welcome to **Chat with Tamil PDF**! This is a basic implementation of **Retrieva
 To clone this repository, run the following command in your terminal:
 ```
 git clone https://github.com/devdattatemgire/Basic_RAG_Chat_With_PDF.git
-
 ```
 
 ### 2. Create a Virtual Environment:
