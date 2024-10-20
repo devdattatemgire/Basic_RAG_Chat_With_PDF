@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ### 5. Create a .env File:
 Create a file named .env in the root of your project directory and add your Gemini API key:
 ```
-GEMINI_API_KEY=<your_key>
+GOOGLE_API_KEY=<your_key>
 ```
 
 ### 6. Run the Streamlit App:
