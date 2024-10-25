@@ -42,6 +42,9 @@ Create a file named .env in the root of your project directory and add your Gemi
 ```
 GOOGLE_API_KEY=<your_key>
 ```
+### llama3.2:3B  
+If you are using llama3.2 3B via Ollama then search in app.py ``` llm = Ollama(model="llama3.2:3B") ``` by using Ctrl+F 
+Then uncomment that line and comment the llm initialization which is done using the Gemini API
 
 ### 6. Run the Streamlit App:
 Start the Streamlit app by running the following command:

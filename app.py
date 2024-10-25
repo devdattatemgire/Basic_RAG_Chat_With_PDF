@@ -7,6 +7,7 @@ from langchain.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.chains import RetrievalQA
 import os
+from langchain.llms import Ollama
 
 # Sidebar Content
 with st.sidebar:
@@ -118,6 +119,8 @@ def main():
                     temperature=0.7,
                     max_output_tokens=512
                 )
+
+                # llm = Ollama(model="llama3.2:3B")
 
                 # Set up the retrieval-based question answering chain
                 retriever = VectorStore.as_retriever(search_type="similarity", search_kwargs={"k": 3})
