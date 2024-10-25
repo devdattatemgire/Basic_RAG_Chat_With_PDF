@@ -12,3 +12,10 @@ __pycache__/
 # Ignore FAISS index and pickle files if needed
 *.pkl
 *_faiss_index/
+
+*.png
+*.txt
+*.pdf
+
+faiss_visualization.py
+test_embeddings.py
