@@ -49,5 +49,5 @@ Start the Streamlit app by running the following command:
 streamlit run app.py
 ```
 
-## 🎉 Happy coding! Remember: Code is like humor. When you have to explain it, it’s bad! 😂
+## 🎉 Happy coding! Remember: Code is like humor. When you have to explain it, it’s bad!! 😂
   
