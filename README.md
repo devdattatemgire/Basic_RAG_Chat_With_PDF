@@ -38,13 +38,16 @@ pip install -r requirements.txt
 ```
 
 ### 5. Create a .env File:
+## Note: Dont miss this step even if you are using llama for generation. We still require Gemini API key as we are using Gemini Embedding Model for the ebeddings
 Create a file named .env in the root of your project directory and add your Gemini API key:
 ```
 GOOGLE_API_KEY=<your_key>
 ```
+
 ### llama3.2:3B  
 If you are using llama3.2 3B via Ollama then search in app.py ``` llm = Ollama(model="llama3.2:3B") ``` by using Ctrl+F 
-Then uncomment that line and comment the llm initialization which is done using the Gemini API
+Then uncomment that line and comment the llm initialization which is done using the Gemini API. 
+ 
 
 ### 6. Run the Streamlit App:
 Start the Streamlit app by running the following command:

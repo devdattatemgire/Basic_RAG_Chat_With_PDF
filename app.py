@@ -1,4 +1,5 @@
 import streamlit as st
+import torch 
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from streamlit_extras.add_vertical_space import add_vertical_space
@@ -8,6 +9,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGener
 from langchain.chains import RetrievalQA
 import os
 from langchain.llms import Ollama
+from transformers import AutoProcessor, AutoModelForPreTraining
 
 # Sidebar Content
 with st.sidebar:
@@ -120,7 +122,13 @@ def main():
                     max_output_tokens=512
                 )
 
+                #..............Ollamm llama 3.2 1B/3B.................................
                 # llm = Ollama(model="llama3.2:3B")
+
+                #..............Huggingface llama 3.2 11B...............................
+                # processor = AutoProcessor.from_pretrained("unsloth/Llama-3.2-11B-Vision-Instruct-bnb-4bit")
+                # llm = AutoModelForPreTraining.from_pretrained("unsloth/Llama-3.2-11B-Vision-Instruct-bnb-4bit", torch_dtype=torch.float16).to("cuda" if torch.cuda.is_available() else "cpu")
+                # llm = AutoModelForPreTraining.from_pretrained( "unsloth/Llama-3.2-11B-Vision-Instruct", torch_dtype=torch.float32).to("cpu")
 
                 # Set up the retrieval-based question answering chain
                 retriever = VectorStore.as_retriever(search_type="similarity", search_kwargs={"k": 3})
